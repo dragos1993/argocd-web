@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/dragos1993/argocd-web.git
+    repoURL: https://github.com/dragos1993/DO180-apps.git
     targetRevision: HEAD
     path: dev
   destination: 
