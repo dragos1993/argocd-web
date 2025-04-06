@@ -4,7 +4,7 @@ metadata:
   name: argocd-web-app-service
 spec:
   selector:
-    app: argocd-web-app
+    app: argocd-web-app-v3
   ports:
     - protocol: TCP
       port: 80
