@@ -4,7 +4,7 @@ metadata:
   name: myapp-argo-application
   namespace: argocd
 spec:
-  project: default
+  project: web-app-dragos
 
   source:
     repoURL: https://github.com/dragos1993/argocd-web.git
