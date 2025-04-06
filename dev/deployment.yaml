@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: argocd-web-app-deployment
 spec:
+  replicas: 1
   selector:
     matchLabels:
-      app: myapp
-  replicas: 2
+      app: argocd-web-app
   template:
     metadata:
       labels:
-        app: myapp
+        app: argocd-web-app
     spec:
       containers:
-      - name: myapp
-        image: primus19/myaddressbook:4
+      - name: argocd-web-app-container
+        image: dragos93/argocd-web-app:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 80
